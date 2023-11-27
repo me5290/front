@@ -1,0 +1,43 @@
+@charset "UTF-8";
+*{
+    color:red;
+}
+h4{
+    color: yellow;
+}
+.text1{
+    color: blue;
+}
+#text2{
+    color:rgb(0, 128, 0);
+}
+body{
+    background-color: aqua;
+}
+.title{
+    font-family: 궁서;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+.content{
+    font-family: 'DNFBitBitv2';
+    color:brown;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    line-height: 160%;
+}
+@font-face{
+    font-family:'DNFBitBitv2';
+    font-style:normal;
+    font-weight:400;
+    src:url('//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf')format('opentype')
+}
+#writer{
+    text-align: center;
+    text-decoration: line-through underline overline;
+    text-shadow: 1px 1px 5px red;
+    color:red;
+    color:#000;
+    color:rgba(249, 71, 255, 0.712);
+}
