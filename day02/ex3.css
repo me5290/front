@@ -108,6 +108,15 @@ label{
 [type="radio"]:checked{
     border: 1em solid #F97B22;
 }
+.sung:checked{
+    border: 0.6em solid #F97B22;
+}
+.big_radio:checked{
+    border: 1.9em solid #F97B22;
+}
+.middle_radio:checked{
+    border: 1.5em solid #F97B22;
+}
 .middlebox>table>thead>tr>th,.middlebox>table>tbody>tr>td{
     /*border: 1px solid #444444;*/
     display: table-cell;
