@@ -1,0 +1,30 @@
+@charset "UTF-8";
+.main{
+    margin:10px;
+    width: 560px;
+    height: auto;
+    border:1px solid #dddddd;
+}
+img{
+    border-bottom: 1px solid #dddddd;
+    width: 100%;
+    height: auto;
+}
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px 10px;
+}
+h3{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 30px 10px;
+}
+p{
+    font-size: 18px;
+    margin: 30px 10px;
+}
+span{
+    color: orange;
+    font-weight: bold;
+}

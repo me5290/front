@@ -1,0 +1,48 @@
+@charset "UTF-8";
+h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 10px;
+}
+h2::before{
+    content: '';
+    padding: 0 4px;
+    margin-right: 10px;
+    background-color: green;
+}
+.box1{
+    width:500px;
+    height: 300px;
+    margin: 20px 0 20px 10px;
+    padding: 20px;
+    background-color: gainsboro;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+dt{
+    margin-top: 30px;
+}
+dd{
+    margin-left: 20px;
+}
+.box2{
+    width: 350px;
+    height: 260px;
+    margin: 0 40px ;
+    padding: 30px 20px;
+    border:1px solid #333;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+p{
+    padding: 16px 0;
+    border-bottom: 1px dotted #333;
+}
+a{
+    float:right;
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}

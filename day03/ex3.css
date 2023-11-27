@@ -1,0 +1,36 @@
+@charset "UTF-8";
+body{
+    padding: 10px;
+}
+img{
+    margin-bottom: 30px;
+}
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    color:orange;
+    margin: 20px 0;
+}
+p{
+    font-size: 16px;
+    color:#000;
+    display: inline;
+}
+.box{
+    width: 500px;
+    height: 100px;
+    background-color: #047D86;
+    padding:1px;
+    box-sizing: border-box;
+}
+ul{
+    margin:20px;
+    line-height: 20px;
+}
+li{
+    color:#fff;
+    margin: 3px 0;
+}
+span{
+    color:orange;
+}
