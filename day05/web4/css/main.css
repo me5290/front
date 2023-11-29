@@ -76,6 +76,8 @@ header{
     background-color: #ffffff;
     width: 290px;
     height: 205px;
+    transform:scale(1.0);        
+    transition: 0.5s;
 }
 #btm_btn ul li p {
     font-weight: bold;
