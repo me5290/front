@@ -1,0 +1,30 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+#header{
+    width: 100%;
+    height: 75px;
+    background-color: aquamarine;
+}
+/*메인 시작*/
+.cateTitle{
+    height: 18.75rem;
+}
+.cateTitle>h3{
+    padding: 60px 0 15px;
+    font-size: 37.5px;
+}
+.cateTitle>p{
+    font-size: 12px;
+}
+.cateTitle>p>span{
+    font-weight: bold;
+}
+.cateNav{
+    float: right;
+}
+/*메인 끝*/
+#footer{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+}
