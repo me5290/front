@@ -1,0 +1,41 @@
+@charset "UTF-8";
+a{
+    color:#333;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+a:hover{
+    color:orange;
+    transition: 1s;
+}
+a:active{
+    color:aqua;
+}
+a:visited{
+    color:blue;
+    font-size: 10px;
+}
+#header{
+    background-color: aquamarine;
+}
+#header>ul{
+    display: flex;
+    justify-content: center;
+}
+#header>ul>li{
+    margin: 0 10px;
+    position: relative;
+}
+#header>ul>li:hover .subMenu{
+    display: block;
+}
+.subMenu{
+    display: none;
+    position: absolute;
+    top:20px;
+    width: 80px;
+    background-color: yellowgreen;
+    padding: 0;
+}

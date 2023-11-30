@@ -1,0 +1,39 @@
+@charset "UTF-8";
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    border:2px solid red;
+}
+.box2{
+    position: relative;
+    top:50px;
+    left: 50px;
+    background-color: blueviolet;
+}
+.box5{
+    position: absolute;
+    top:50px;
+    left: 50px;
+    background-color: aquamarine;
+}
+.box8{
+    top:50px;
+    left: 50px;
+    background-color: yellow;
+}
+.box11{
+    position: fixed;
+    background-color: blue;
+    right: 10px;
+    bottom: 10px;
+}
+.parent{
+    position: relative;
+}
+.box14{
+    position: absolute;
+    background-color: azure;
+    top:50px;
+    left: 50px;
+}

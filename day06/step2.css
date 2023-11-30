@@ -1,0 +1,66 @@
+@charset "UTF-8";
+#header{
+    display: flex;
+    background-color: aquamarine;
+    z-index: 3;
+    position: sticky;
+    top:0;
+}
+#header>ul>li{
+    display: inline-block;
+}
+#popup{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    right: 5px;
+    bottom: 10px;
+    z-index: 1;
+}
+#main{
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: aqua;
+    position: relative;
+    margin-bottom: 200px;
+}
+.box{
+    border-radius: 20px;
+    width: 100px;
+    height: 70px;
+    background-color: yellow;
+    padding: 10px;
+    text-align: center;
+}
+.box1{
+    position: absolute;
+    top:15%;
+    left:44%;
+}
+.box2{
+    position: absolute;
+    top:30%;
+    left:25%;
+}
+.box3{
+    position: absolute;
+    top:30%;
+    right:25%;
+}
+.box4{
+    position: absolute;
+    bottom:30%;
+    left:25%;
+}
+.box5{
+    position: absolute;
+    bottom:30%;
+    right:25%;
+}
+.box6{
+    position: absolute;
+    bottom:15%;
+    left:44%;
+}
