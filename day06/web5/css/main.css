@@ -122,6 +122,9 @@ input:focus{
     display: inline-block;
     height: 8px;
 }
+#ftTop>li:nth-child(1)::before{
+    content: none;
+}
 #ftTop>li>a{
     font-size: 10px;
 }
