@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='step4.css'>
+   
+</head>
+<body>
+    <div id="wrap">
+        <h1>가 계 부</h1>
+        <div id="line"></div>
+        <div id="content">
+            <ul>
+                <li>
+                    날짜 : <input id="con1" type="date"/>
+                </li>
+                <li>
+                    항목 : <input id="con2" type="text" placeholder="항목"/>
+                </li>
+                <li>
+                    금액 : <input id="con3" type="text" placeholder="금액"/>
+                </li>
+            </ul>
+            <input onclick="등록함수()" type="button" value="등록">
+        </div>
+        <table id="list">
+            <thead>
+                <tr>
+                    <th>
+                        날짜
+                    </th>
+                    <th>
+                        항목
+                    </th>
+                    <th>
+                        금액
+                    </th>
+                    <th>
+                        비고
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="print">
+                
+            </tbody>
+        </table>
+        <div id="sum">
+
+        </div>
+        <script src='step4.js'></script>
+    </div>
+</body>
+</html>
