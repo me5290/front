@@ -118,13 +118,13 @@ h1{
     color:#a0a0a0;
     text-decoration: line-through;
 }
-.soldOut>.btn>input[type="button"]:first-child {
-    pointer-events: none;
-}
 .soldOut>.btn>input[type="button"]{
     background-color: #a0a0a0;
     color: #fff;
     border: 2px solid #333;
+}
+.soldOut>.btn>input[type="button"]:first-child {
+    pointer-events: none;
 }
 .retouch{
     width: 100%;
