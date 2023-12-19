@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    margin: 50px 6px;
+    float: left;
+}
+span{
+    margin: 0 20px;
+}
+.movie{
+    display: none;
+}
+ul:nth-child(1){
+    display: block;
+}
