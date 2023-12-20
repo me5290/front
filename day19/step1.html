@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='step1.css'>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <img src="img/main_banner1.png" alt="버거킹배너1"/>
+            <ul>
+                <!--스크립트 구역-->
+            </ul>
+        </div>
+        <div id="main">
+            <div id="productBox">
+                <!--스크립트 구역-->
+            </div>
+            <div id="cartBox">
+                <div class="cartHeader">
+                    <div class="cartLeft">
+                        카트<div class="cnt"></div>
+                    </div>
+                    <div class="cartRight">
+                        <p>총 주문금액 <span></span></p>
+                    </div>
+                </div>
+                <div class="cartContent">
+                    <!--스크립트 구역-->
+                </div>
+                <div id="cartBtn">
+                    <input onclick="취소()" type="button" value="취소하기"/>
+                    <input onclick="주문()" type="button" value="주문하기"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="adminMenu">
+        <h3>관리자 메뉴</h3>
+        <div id="addCategory">
+            카테고리 추가 <input id="add" type="text"/>
+            <input onclick="addCategory()" type="button" value="추가"/>
+        </div>
+        <ul id="inputBox">
+            <li>
+                카테고리
+                <select id="goodsCategory">
+                    <option value="1">신제품(NEW)</option>
+                    <option value="2">프리미엄</option>
+                    <option value="3">와퍼&주니어</option>
+                    <option value="4">치킨&슈림프버거</option>
+                    <option value="5">올데이킹&킹모닝</option>
+                </select>
+            </li>
+            <li>
+                상품명<input id="goodsName" type="text"/>
+            </li>
+            <li>
+                가격<input id="goodsPrice" type="text"/>
+            </li>
+            <li>
+                상품이미지<input id="goodsImg" type="text" placeholder="확장명까지 넣어주세요."/>
+            </li>
+                <input onclick="등록()" value="등록" type="button"/>
+        </ul>
+    </div>
+    <script src='step1.js'></script>
+</body>
+</html>
