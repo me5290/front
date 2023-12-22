@@ -165,6 +165,7 @@ form>p{
 .submitBtn{
     text-align: center;
 }
+select{ background: #ffffff url(../images/arrow.png) no-repeat 98% 50%/17px 10px; }
 input[type="submit"]{
     background-color: #121212;
     color: #fff;
@@ -176,3 +177,76 @@ footer{
     padding: 14px 10px 20px;
     text-align: center;
 }
+/* 162p. 패럴랙스 효과  */
+.dateSec{ margin-bottom: 480px; } /* 배경을 보여질 여백 만들기 */
+/* 가상 요소 선택자 이용한 이미지(배경) 삽입 */
+.dateSec::after{
+    content: ""; /*배경을 넣을 예정이라서 내용물은 없는 상태*/
+    position: fixed; /* 스크롤이 움직여도 고정 */
+    left: 0; top: 0; width: 100%; height: 100%; /*화면 가득 채우기 */
+    background: url(../images/bg.jpg) no-repeat center/cover;
+    z-index: -1; /* 기본 요소들보다 아래에 배치 */
+}
+/* 165p. 트랜지션 애니메이션 효과   */
+input[type="submit"]:hover { /* 마우스 올렸을때*/
+    background-color: #c7887f;
+    margin-left: 20px; 
+    transition-property: background-color,margin-left; /* 또는 all */
+    transition-duration: 300ms; /* 0.3초 */
+    transition-timing-function: ease-in; /*시작천천히 끝빨리*/
+    transition-delay: 0ms; /* 지연  시간 없음 */
+    transition: background-color,margin-left 300ms ease-in 0ms;
+}
+/* 167p. 키 프레임 설정   */
+@keyframes scrollAnimation{ /* 1. @keyframes 사용할애니메이션명 */
+    0%{ transform: scaleY(0);       transform-origin: top; }    /*  시작점 */
+    50%{ transform: scaleY(1);      transform-origin: top;}     /* 가운데 이전 */
+    50.1%{ transform: scaleY(1);    transform-origin: bottom; } /* 가운데 이후 */
+    100%{ transform: scaleY(0);     transform-origin: bottom;}  /* 종료점 */
+}
+/* 169p. 키 프레임에 애니메이션 적용 */
+header .scroll img{
+    animation-name: scrollAnimation;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+
+/*  
+    p.illust{ }     : p 요소의 class명이 illust 이면 
+    .illust{ }      : 전체요소의 clsass명이 illust 이면  
+    요소[속성명=값]
+*/
+
+/*
+    p.150
+    !important > style속성 > id > class > 타입 > *
+        1.  p{ text-size : 16px !important; }
+        2.  <div style="text-size:16px;">
+        3.  #id{ text-size : 16px; }
+        4.  .class{ text-size : 16px; }
+        5.  p{ text-size : 16px; }
+        6.  *{ text-size : 16px; }
+
+
+
+    p. 151~ 152 : 가상 요소 선택자 
+        - HTML에 없던 내용물[ 주로 텍스트,이미지 ]을 CSS에서 넣어주기가 가능한 속성  -
+        ::before        : 요소 앞부분 에 내용물 가상으로 넣어주기
+        ::after         : 요소 뒷부분 에 내용물 가상으로 넣어주기 
+            content     : 가상 요소의 내용물
+
+
+
+    flex-basis: 465px;      : 유연성  
+        vs 
+    width: 465px;           : 고정 
+
+        차이점 : 1. flex-direction:colums 일때 
+                    width : 고정    flex-basis : 전체사이즈 늘어남.
+                 2. 요소보다 더 큰 컨텐츠가 들어왔을때.
+                    width : 고정    flex-basis : 같이 늘어남.
+        
+    
+*/
