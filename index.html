@@ -5,8 +5,6 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>이민형 front 학습 페이지</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
     <style>
         *{
             margin: 0;
@@ -16,145 +14,230 @@
         ul,ol{
             list-style: none;
         }
+        a{
+            text-decoration: none;
+            color : #333;
+        }
+        html{
+            background-color: rgba(255, 228, 196, 0.363);
+        }
+        body{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        h1{
+            text-align: center;
+            line-height: 200px;
+            text-shadow: 4px 2px 2px #c4c4c4;
+            color: rgb(174, 44, 235);
+            font-size: 40px;
+        }
+        #team{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 50px 0;
+        }
+        #htmlCss{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 50px 0;
+        }
+        #js{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 50px 0;
+        }
+        #htmlCss>.day{
+            border: 3px solid rgb(214, 64, 64);
+        }
+        #js>.day{
+            border: 3px solid rgb(236, 226, 86);
+        }
+        .day{
+            padding: 20px;
+            margin: 20px;
+            width: 260px;
+            border: 3px solid aquamarine;
+            border-radius: 30px 0 30px 0;
+        }
+        .day>h3{
+            margin-bottom: 30px;
+        }
+        .day>a{
+            display: block;
+            margin: 14px 0;
+        }
+        .day>a:hover{
+            text-decoration: underline;
+            color: rgb(174, 44, 235);
+        }
     </style>
 </head>
 <body>
     <h1>이민형 front 학습 페이지</h1>
-    <br/>
     
-    <h3>요약</h3>
-    <a href="1_HTML마크업정리.txt">1.html 마크업 정리</a>
-    <a href="2_CSS속성정리.txt">2. css 속성 정리</a>
-    <a href="3_JS정리.txt">3. js 속성 정리</a>
-    <br/>
+    <div id="team">
+        <div class="day">
+            <h3>요약</h3>
+            <a href="1_HTML마크업정리.txt">1.html 마크업 정리</a>
+            <a href="2_CSS속성정리.txt">2. css 속성 정리</a>
+            <a href="3_JS정리.txt">3. js 속성 정리</a>
+        </div>
 
-    <h3>Team</h3>
-    <a href="team/team1/team1.html">team1 : 설문지[Team과제]</a>
-    <a href="team/team2/index.html">team2 : 더본창업센터</a>
-    <a href="team/team3/index.html">team3 : EZEN#</a>
+        <div class="day">
+            <h3>Team</h3>
+            <a href="team/team1/team1.html">team1 : 설문지[Team과제]</a>
+            <a href="team/team2/index.html">team2 : 더본창업센터</a>
+            <a href="team/team3/index.html">team3 : EZEN#</a>
+        </div>
+    </div>
 
-    <h3>day01</h3>
-    <a href="day01/step1.html">step1</a>
-    <a href="day01/step2.html">step2 : HTML 마크업1</a>
-    <a href="day01/step3.html">step3 : HTML 마크업2</a>
-    <a href="day01/ex1.html">문제1 : 교재 파트1</a>
-    <a href="day01/ex2.html">문제2 : 테이블 병합</a>
-    <br/>
+    <div id="htmlCss">
+        <div class="day">
+            <h3>day01</h3>
+            <a href="day01/step1.html">step1</a>
+            <a href="day01/step2.html">step2 : HTML 마크업1</a>
+            <a href="day01/step3.html">step3 : HTML 마크업2</a>
+            <a href="day01/ex1.html">문제1 : 교재 파트1</a>
+            <a href="day01/ex2.html">문제2 : 테이블 병합</a>
+        </div>
 
-    <h3>day02</h3>
-    <a href="day02/step1.html">step1 : HTML 마크업3</a>
-    <a href="day02/step2.html">step2 : CSS 적용방법</a>
-    <a href="day02/step3.html">step3 : 글꼴 관련 CSS</a>
-    <a href="day02/ex1.html">문제1 : 에버랜드 포스터</a>
-    <a href="day02/ex2.html">문제2 : 게시판</a>
-    <br/>
+        <div class="day">
+            <h3>day02</h3>
+            <a href="day02/step1.html">step1 : HTML 마크업3</a>
+            <a href="day02/step2.html">step2 : CSS 적용방법</a>
+            <a href="day02/step3.html">step3 : 글꼴 관련 CSS</a>
+            <a href="day02/ex1.html">문제1 : 에버랜드 포스터</a>
+            <a href="day02/ex2.html">문제2 : 게시판</a>
+        </div>
 
-    <h3>day03</h3>
-    <a href="day03/step1.html">step1 : 박스 모델 관련 CSS</a>
-    <a href="day03/ex1.html">문제1 : 교재 파트2</a>
-    <a href="day03/ex2.html">문제2 : </a>
-    <a href="day03/ex3.html">문제3 : </a>
-    <a href="day03/ex4.html">문제4 : </a>
-    <a href="day03/ex5.html">문제5 : 인스타 로그인</a>
-    <a href="day03/ex6.html">문제6 : 카카오톡 로그인</a>
-    <br/>
+        <div class="day">
+            <h3>day03</h3>
+            <a href="day03/step1.html">step1 : 박스 모델 관련 CSS</a>
+            <a href="day03/ex1.html">문제1 : 교재 파트2</a>
+            <a href="day03/ex2.html">문제2 : 우대 정보</a>
+            <a href="day03/ex3.html">문제3 : 책 소개</a>
+            <a href="day03/ex4.html">문제4 : 파인애플</a>
+            <a href="day03/ex5.html">문제5 : 인스타 로그인</a>
+            <a href="day03/ex6.html">문제6 : 카카오톡 로그인</a>
+        </div>
 
-    <h3>day04</h3>
-    <a href="day04/step1.html">step1 :</a>
-    <a href="day04/step2html">step2 :</a>
-    <a href="day04/step3.html">step3 :</a>
-    <a href="day04/web1/index.html">웹1 : 포토 아카데미 홈페이지</a>
-    <a href="day04/web2/index.html">웹2 : 더 베이킹 홈페이지</a>
-    <br/>
+        <div class="day">
+            <h3>day04</h3>
+            <a href="day04/step1.html">step1 : flex1</a>
+            <a href="day04/step2html">step2 : flex2</a>
+            <a href="day04/step3.html">step3 : 레이아웃 나누기</a>
+            <a href="day04/web1/index.html">웹1 : 포토 아카데미 홈페이지</a>
+            <a href="day04/web2/index.html">웹2 : 더 베이킹 홈페이지</a>
+        </div>
 
-    <h3>day05</h3>
-    <a href="day05/web3/index.html">웹3 : 교재 파트3</a>
-    <a href="day05/web4/index.html">웹4 : THE스튜디오 홈페이지</a>
-    <br/>
+        <div class="day">
+            <h3>day05</h3>
+            <a href="day05/web3/index.html">웹3 : 교재 파트3</a>
+            <a href="day05/web4/index.html">웹4 : THE스튜디오 홈페이지</a>
+        </div>
 
-    <h3>day06</h3>
-    <a href="day06/web5/index.html">웹5 : 네이버 회원가입 페이지</a>
-    <a href="day06/step1.html">step1 : </a>
-    <a href="day06/step2.html">step2 : </a>
-    <a href="day06/step3.html">step3 : </a>
-    <br/>
+        <div class="day">
+            <h3>day06</h3>
+            <a href="day06/web5/index.html">웹5 : 네이버 회원가입 페이지</a>
+            <a href="day06/step1.html">step1 : position</a>
+            <a href="day06/step2.html">step2 : 포지션 연습</a>
+            <a href="day06/step3.html">step3 : 메뉴 바</a>
+        </div>
 
-    <h3>day07</h3>
-    <a href="day07/web6/index.html">웹6 : 조군 쇼핑몰 홈페이지</a>
-    <br/>
+        <div class="day">
+            <h3>day07</h3>
+            <a href="day07/web6/index.html">웹6 : 조군 쇼핑몰 홈페이지</a>
+        </div>
 
-    <h3>day08</h3>
-    <a href="day08/web7/index.html">웹7 : 교재 파트4</a>
-    <br/>
+        <div class="day">
+            <h3>day08</h3>
+            <a href="day08/web7/index.html">웹7 : 교재 파트4</a>
+        </div>
+    </div>
 
-    <h3>day09 : JS 기초</h3>
-    <a href="day09/step1.html">step1 : js 사용</a>
-    <a href="day09/step2.html">step2 : js 입출력</a>
-    <a href="day09/step3.html">step3 : 문자열</a>
-    <br/>
+    <div id="js">
+        <div class="day">
+            <h3>day09 : JS 기초</h3>
+            <a href="day09/step1.html">step1 : js 사용</a>
+            <a href="day09/step2.html">step2 : js 입출력</a>
+            <a href="day09/step3.html">step3 : 문자열</a>
+        </div>
 
-    <h3>day10</h3>
-    <a href="day10/step1.html">step1 : js 숫자,불</a>
-    <a href="day10/step2.html">step2 : 상수/변수</a>
-    <a href="day10/step3.html">step3 : 연산자</a>
-    <a href="day10/step4.html">step4 : 연산자 연습문제</a>
-    <br/>
+        <div class="day">
+            <h3>day10</h3>
+            <a href="day10/step1.html">step1 : js 숫자,불</a>
+            <a href="day10/step2.html">step2 : 상수/변수</a>
+            <a href="day10/step3.html">step3 : 연산자</a>
+            <a href="day10/step4.html">step4 : 연산자 연습문제</a>
+        </div>
 
-    <h3>day11</h3>
-    <a href="day11/step1.html">step1 : 자료형 변환</a>
-    <a href="day11/step2.html">step2 : if문</a>
-    <a href="day11/step3.html">step3 : if문 연습문제</a>
-    <br/>
+        <div class="day">
+            <h3>day11</h3>
+            <a href="day11/step1.html">step1 : 자료형 변환</a>
+            <a href="day11/step2.html">step2 : if문</a>
+            <a href="day11/step3.html">step3 : if문 연습문제</a>
+        </div>
 
-    <h3>day12</h3>
-    <a href="day12/step1.html">step1 : switch , 짧은조건문</a>
-    <a href="day12/step2.html">step2 : 배열</a>
-    <a href="day12/step3.html">step3 : 배열활용</a>
-    <br/>
+        <div class="day">
+            <h3>day12</h3>
+            <a href="day12/step1.html">step1 : switch , 짧은조건문</a>
+            <a href="day12/step2.html">step2 : 배열</a>
+            <a href="day12/step3.html">step3 : 배열활용</a>
+        </div>
 
-    <h3>day13</h3>
-    <a href="day13/step1.html">step1 : 배열에 저장,출력</a>
-    <a href="day13/step2.html">step2 : 주차정산기</a>
-    <a href="day13/step3.html">step3 : 반복문</a>
-    <br/>
+        <div class="day">
+            <h3>day13</h3>
+            <a href="day13/step1.html">step1 : 배열에 저장,출력</a>
+            <a href="day13/step2.html">step2 : 주차정산기</a>
+            <a href="day13/step3.html">step3 : 반복문</a>
+        </div>
 
-    <h3>day14</h3>
-    <a href="day14/step1.html">step1 : 무한루프</a>
-    <a href="day14/step2.html">step2 : 별 찍기</a>
-    <br/>
+        <div class="day">
+            <h3>day14</h3>
+            <a href="day14/step1.html">step1 : 무한루프</a>
+            <a href="day14/step2.html">step2 : 별 찍기</a>
+        </div>
 
-    <h3>day15</h3>
-    <a href="day15/step1.html">step1 : 함수</a>
-    <a href="day15/step2.html">step2 : 매개변수,리턴</a>
-    <a href="day15/step3.html">step3 : 할일 목록</a>
-    <a href="day15/step4.html">step4 : 가계부</a>
-    <br/>
+        <div class="day">
+            <h3>day15</h3>
+            <a href="day15/step1.html">step1 : 함수</a>
+            <a href="day15/step2.html">step2 : 매개변수,리턴</a>
+            <a href="day15/step3.html">step3 : 할일 목록</a>
+            <a href="day15/step4.html">step4 : 가계부</a>
+        </div>
 
-    <h3>day16</h3>
-    <a href="team/team3/index.html">team3 : EZEN#</a>
-    <br/>
+        <div class="day">
+            <h3>day16</h3>
+            <a href="team/team3/index.html">team3 : EZEN#</a>
+        </div>
 
-    <h3>day17</h3>
-    <a href="day17/step1.html">step1 : 글쓰기-배열</a>
-    <a href="day17/step2.html">step2 : 객체</a>
-    <a href="day17/step3.html">step3 : 글쓰기-객체</a>
-    <a href="day17/step4.html">step4 : team3 객체로 바꾸기</a>
-    <br/>
+        <div class="day">
+            <h3>day17</h3>
+            <a href="day17/step1.html">step1 : 글쓰기-배열</a>
+            <a href="day17/step2.html">step2 : 객체</a>
+            <a href="day17/step3.html">step3 : 글쓰기-객체</a>
+            <a href="day17/step4.html">step4 : team3 객체로 바꾸기</a>
+        </div>
 
-    <h3>day18</h3>
-    <a href="day18/step1.html">step1 : 영화관</a>
-    <br/>
+        <div class="day">
+            <h3>day18</h3>
+            <a href="day18/step1.html">step1 : 영화관</a>
+        </div>
 
-    <h3>day19</h3>
-    <a href="day19/step1.html">step1 : 버거킹</a>
-    <br/>
+        <div class="day">
+            <h3>day19</h3>
+            <a href="day19/step1.html">step1 : 버거킹</a>
+        </div>
 
-    <h3>day20</h3>
-    <a href="day20/step1.html">step1 : 객체 메소드</a>
-    <a href="day20/step2.html">step2 : JSON,localStorage</a>
-    <a href="day20/step3.html">step3 : 예제</a>
-    <a href="day20/step4.html">step4 : JSON,localStorage 활용 회원가입</a>
-    <a href="day20/step5/write.html">step5 : 글쓰기,글목록,글보기</a>
-    <br/>
+        <div class="day">
+            <h3>day20</h3>
+            <a href="day20/step1.html">step1 : 객체 메소드</a>
+            <a href="day20/step2.html">step2 : JSON,localStorage</a>
+            <a href="day20/step3.html">step3 : 예제</a>
+            <a href="day20/step4.html">step4 : JSON,localStorage 활용 회원가입</a>
+            <a href="day20/step5/write.html">step5 : 글쓰기,글목록,글보기</a>
+        </div>
+    </div>
 </body>
 </html>
