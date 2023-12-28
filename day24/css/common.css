@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+a{
+    color: #111;
+    text-decoration: none;
+}
+#wrap{
+    width: 350px;
+    margin: 0 auto;
+}
+#main{
+    margin-top: 110px;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #e8e8e8;
+    background-color: #fff;
+    width: 350px;
+    position: fixed;
+    top:0;
+}
+#header img{
+    width: 70px;
+}
